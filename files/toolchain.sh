@@ -8,6 +8,6 @@ cd /work && \
   cd /opt && \
   echo " [*] Packaging toolchain..." && \
   tar czf /work/docker/toolchain/arm-buildroot-linux-gnueabihf-4.9.3.tar.gz . 1>/dev/null 2>/dev/null&& \
-  cd - && \
+  cd - 1>/dev/null 2>/dev/null && \
   echo " [*] Cleaning..." && \
-  ./make.sh distclean
+  ./make.sh distclean 1>/dev/null 2>/dev/null
