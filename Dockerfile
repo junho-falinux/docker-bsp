@@ -18,6 +18,8 @@ RUN \
         && \
     rm -rf /var/lib/apt/lists/*
 
+ADD files/toolchain.sh /
+
 RUN chmod 777 /opt
 
 CMD ["/bin/bash"]
