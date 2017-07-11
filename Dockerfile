@@ -2,7 +2,7 @@ FROM ubuntu:16.04
 
 # Set the locale
 RUN apt-get clean && apt-get update
-RUN apt-get install locales
+RUN apt-get -y install locales
 RUN locale-gen ko_KR.UTF-8
 
 ENV LANG ko_KR.UTF-8
