@@ -1,9 +1,12 @@
 FROM ubuntu:16.04
 
-#RUN locale-gen ko_KR.UTF-8
+# Set the locale
+RUN apt-get clean && apt-get update
+RUN apt-get install locales
+RUN locale-gen ko_KR.UTF-8
 
-#ENV LANG ko_KR.UTF-8
-#ENV LC_ALL ko_KR.UTF-8
+ENV LANG ko_KR.UTF-8
+ENV LC_ALL ko_KR.UTF-8
 
 #RUN sed -ri 's/\/archive\.ubuntu\.com/\/kr\.archive\.ubuntu\.com/g' /etc/apt/sources.list
 
