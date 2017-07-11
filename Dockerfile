@@ -1,11 +1,11 @@
 FROM ubuntu:16.04
 
-RUN locale-gen ko_KR.UTF-8
+#RUN locale-gen ko_KR.UTF-8
 
-ENV LANG ko_KR.UTF-8
-ENV LC_ALL ko_KR.UTF-8
+#ENV LANG ko_KR.UTF-8
+#ENV LC_ALL ko_KR.UTF-8
 
-RUN sed -ri 's/\/archive\.ubuntu\.com/\/kr\.archive\.ubuntu\.com/g' /etc/apt/sources.list
+#RUN sed -ri 's/\/archive\.ubuntu\.com/\/kr\.archive\.ubuntu\.com/g' /etc/apt/sources.list
 
 RUN \
     apt-get update && \
