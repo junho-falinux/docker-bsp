@@ -17,7 +17,7 @@ RUN \
         git-core build-essential gcc-arm-none-eabi libssl-dev \
         sed binutils patch gzip bzip2 perl tar cpio python unzip rsync wget \
         libz3-dev libncurses5-dev pkg-config libusb-1.0-0-dev \
-        bc lzop u-boot-tools vim flex bison \
+        bc lzop u-boot-tools vim flex bison device-tree-compiler \
         && \
     rm -rf /var/lib/apt/lists/*
 
